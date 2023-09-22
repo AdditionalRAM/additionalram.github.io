@@ -96,7 +96,7 @@ h3.specialfont{
 }
 
 
-a{
+a:not(.no-effects){
     text-decoration: none;
     color: var(--accent-lime);
     padding: 5px;
@@ -106,11 +106,17 @@ a{
     box-sizing: border-box;
 }
 
-a:not(.navbar){
+a:not(.no-effects){
     display: inline-block;
 }
 
-a:hover:not(.logo-anchor){
+a.no-effects{
+    text-decoration: none;
+    color: var(--text-color);
+    display: inline-block;
+}
+
+a:hover:not(.logo-anchor):not(.no-effects){
     color: var(--background-color2);
     background-color: var(--accent-lime);
     transform: scale(1.1) !important;
@@ -170,27 +176,6 @@ ul.resume li:nth-of-type(odd){
 a.vertical-stack{
     display: block;
     text-align: center;
-}
-
-nav{
-    display: block;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-nav ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-nav a{
-    display: block;
-    padding: 2vh 2vw;
-    margin: 1vw;
 }
 
 a.logo-anchor{
@@ -285,6 +270,64 @@ a.logo-anchor:hover{
     padding: 0.5rem 2rem;
 }
 
+a.divanchor{
+    display: inline-block;
+    margin: 20px;
+}
+
+.project{
+    width: 20vw;
+    height: 60vh;
+    border: 5px solid var(--accent-green);
+    border-radius: 5px;
+    background-color: var(--background-color1);
+    transition: transform 200ms ease-in-out, border-color 200ms ease-in-out;
+}
+
+
+.project img{
+    width: 100%;    
+}
+
+.projectname{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3rem;
+    color: var(--accent-lime);
+    transition: color;
+}
+
+.project:hover{
+    transform: scale(1.05);
+    border-color: var(--accent-blue);
+    /* make the cursor like its clicking a link */
+    cursor: pointer;
+}
+
+nav{
+    display: block;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a{
+    display: block;
+    padding: 2vh 2vw;
+    margin: 1vw;
+}
+
+/* .project:hover .projectname{
+    color: var(--accent-blue);
+} */
 
 @media all and (max-width: 1200px) {
     header{
