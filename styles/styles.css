@@ -56,6 +56,7 @@ header{
 .specialfont{
     font-family: VT323, sans-serif;
     text-align: left;
+    font-weight: normal;
 }
 
 h1.specialfont{
@@ -364,21 +365,36 @@ a.navbar{
     color: var(--accent-blue);
 } */
 
+@media all and (min-width: 1200px) {
+    a:active:not(.no-effects){
+        color: var(--background-color2);
+        transform: scale(0.95) !important;
+    }
+    .project:active{
+        transform: scale(0.95) !important;
+    }
+}
+
 @media all and (max-width: 1200px) {
     header{
         height: min(20vh, 120px);
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        width: 100%;
     }
     
     body {
-        width: 100%;
+        width: 100vw;
         border: none;
-        /* get the header's height and adjust top margin accordingly */
         margin-top: min(20vh, 120px);
         margin-bottom: 2vh;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+        box-sizing: content-box;
     }
+    
     
     .logo-container{
         margin-top: 2vh;
@@ -403,27 +419,39 @@ a.navbar{
         margin-bottom: 3vh;
         margin-top: -3vh;
     }
+    .project-container{
+        margin: 0 auto;
+        text-align: center;
+        width: 100vw;
+    }
     .project{
         width: 90vw;
         height: fit-content;
+        margin: 0 auto;
     }
     .projectname-container{
         height: fit-content;
+        margin: 0;
     }
     .projectname{
         font-size: 7vw;
         margin: 2% auto;
     }
-    .projectdesc-container{
+    .project-desc-container{
         height: fit-content;
+        margin: 0;
     }
     .project-desc{
-        font-size: 1em;
+        font-size: 3.5vw;
         text-align: center;
     }
     .projectimg-container{
         width: 100%;
         height: auto;
         margin: 0;
+    }
+    a.divanchor{
+        margin: 0;
+        margin-top: 10vh;
     }
 }
