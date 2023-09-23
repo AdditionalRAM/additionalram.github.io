@@ -271,9 +271,16 @@ a.logo-anchor:hover{
     padding: 0.5rem 2rem;
 }
 
-a.divanchor{
+.divanchor{
     display: inline-block;
     margin: 20px;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .project{
@@ -306,15 +313,17 @@ a.divanchor{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projectname{
     text-align: center;
-    margin: 0 auto;
     font-size: 3rem;
     color: var(--accent-lime);
     transition: color;
-    height: 20%;
     font-size: 2.5vw;
 }
 
@@ -323,13 +332,15 @@ a.divanchor{
     width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-desc{
-    margin: 5% 5%;
     font-size: 1vw;
+    margin: 5% 5%;
     text-align: center;
-    vertical-align: middle;
 }
 
 .project:hover{
@@ -360,6 +371,24 @@ a.navbar{
     margin: 1vw;
 }
 
+.scrolldown-arrow{
+    background-color: transparent;
+    border: none;
+    font-size: 10vh;
+    position: absolute;
+    bottom: 3vw;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent-lime);
+    transition: transform 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.scrolldown-arrow:hover{
+    color: var(--accent-blue);
+    transform: translateX(-50%) translateY(2vh) scale(1.4) !important;
+    cursor: pointer;
+}
+
 
 /* .project:hover .projectname{
     color: var(--accent-blue);
@@ -388,7 +417,7 @@ a.navbar{
         width: 100vw;
         border: none;
         margin-top: min(20vh, 120px);
-        margin-bottom: 2vh;
+        margin-bottom: 0;
         margin-right: 0;
         margin-left: 0;
         padding: 0;
@@ -450,8 +479,8 @@ a.navbar{
         height: auto;
         margin: 0;
     }
-    a.divanchor{
+    .divanchor{
         margin: 0;
-        margin-top: 10vh;
+        margin-bottom: 10vh;
     }
 }
