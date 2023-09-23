@@ -277,16 +277,34 @@ a.divanchor{
 
 .project{
     width: 20vw;
-    height: 60vh;
+    height: 33vw;
     border: 5px solid var(--accent-green);
     border-radius: 5px;
     background-color: var(--background-color1);
     transition: transform 200ms ease-in-out, border-color 200ms ease-in-out;
 }
 
+.projectimg-container{
+    aspect-ratio: 1/1;
+    width: 20vw;
+    height: 20vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
-.project img{
-    width: 100%;    
+.project img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.projectname-container{
+    height: 6vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .projectname{
@@ -295,6 +313,22 @@ a.divanchor{
     font-size: 3rem;
     color: var(--accent-lime);
     transition: color;
+    height: 20%;
+    font-size: 2.5vw;
+}
+
+.project-desc-container{
+    height: 7vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.project-desc{
+    margin: 5% 5%;
+    font-size: 1vw;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .project:hover{
@@ -319,11 +353,12 @@ nav ul{
     justify-content: space-around;
 }
 
-nav a{
+a.navbar{
     display: block;
     padding: 2vh 2vw;
     margin: 1vw;
 }
+
 
 /* .project:hover .projectname{
     color: var(--accent-blue);
@@ -364,6 +399,31 @@ nav a{
     }
     nav{
         box-sizing: border-box;
-        margin: 0 2vw;
+        margin: 0;
+        margin-bottom: 3vh;
+        margin-top: -3vh;
+    }
+    .project{
+        width: 90vw;
+        height: fit-content;
+    }
+    .projectname-container{
+        height: fit-content;
+    }
+    .projectname{
+        font-size: 7vw;
+        margin: 2% auto;
+    }
+    .projectdesc-container{
+        height: fit-content;
+    }
+    .project-desc{
+        font-size: 1em;
+        text-align: center;
+    }
+    .projectimg-container{
+        width: 100%;
+        height: auto;
+        margin: 0;
     }
 }
