@@ -372,23 +372,6 @@ a.navbar{
     margin: 1vw;
 }
 
-.scrolldown-arrow{
-    background-color: transparent;
-    border: none;
-    font-size: 10vh;
-    position: absolute;
-    bottom: 3vw;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--accent-lime);
-    transition: transform 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275), color 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.scrolldown-arrow:hover{
-    color: var(--accent-blue);
-    transform: translateX(-50%) translateY(2vh) scale(1.4) !important;
-    cursor: pointer;
-}
 
 .contactsm{
     list-style: none;
@@ -417,6 +400,45 @@ a.navbar{
 
 .pixelated{
     image-rendering: pixelated;
+}
+
+
+.totransition {
+    /* margin-top:40px; */
+    -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+    transform: translateY(50px) rotate(-5deg) translateZ(0);
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0;
+}
+
+.inView {
+    opacity: 1;
+    -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+
+.scrolldown-arrow{
+    background-color: transparent;
+    border: none;
+    font-size: 10vh;
+    position: absolute;
+    bottom: 3vw;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent-lime);
+    transition: transform 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275), color 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.scrolldown-arrow:hover{
+    color: var(--accent-blue);
+    transform: translateX(-50%) translateY(2vh) scale(1.4) !important;
+    cursor: pointer;
 }
 
 @media all and (min-width: 1200px) {
