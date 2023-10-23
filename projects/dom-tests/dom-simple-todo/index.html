@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM To Do</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <!-- plan
+    h1 area with divider
+    list container
+    button to add another list
+    in the list, button to add an item
+    every item has checkmark box
+    -->
+    <h1>To Do</h1>
+    <div class="divider"></div>
+    <div class="listscontainer">
+        <div class="listcontainer">
+            <input type="text" class="listtitle" placeholder="List Name" />
+            <div class="divider"></div>
+            <div class="listparent">
+                <ul class="list">
+                    <li class="listitem">
+                        <input type="checkbox" class="itemcheckbox" />
+                        <input type="text" class="itemname" placeholder="Task here">
+                    </li>
+                    <li class="listitem addnewitem">
+                        <p class="addnewlabel">Add New</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="remove">Remove</button>
+        </div>
+        <div class="addnewlist" id="addnewlist">
+            <p class="addnewlabel">Add New List</p>
+        </div>
+    </div>
+    <button class="removeall">Remove All</button>
+    <script src="app.js"></script>
+</body>
+</html>

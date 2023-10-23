@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>DOM Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <h1>DOM Tic Tac Toe</h1>
+    <div class="divider"></div>
+    <div class="group">
+        <div class="gameholder" id="normalgameholder">
+            <div class="row" id="row-1" data-rownum="1">
+                <div class="cell" id="cell-1a">
+                    <img src="images/x.svg" alt="X" class="x" />
+                </div>
+                <div class="cell" id="cell-1b">
+                    <img src="images/o.svg" alt="O" class="o" />
+                </div>
+                <div class="cell" id="cell-1c"></div>
+            </div>
+            <div class="row" id="row-2" data-rownum="2">
+                <div class="cell" id="cell-2a"></div>
+                <div class="cell" id="cell-2b"></div>
+                <div class="cell" id="cell-2c"></div>
+            </div>
+            <div class="row" id="row-3" data-rownum="3">
+                <div class="cell" id="cell-3a"></div>
+                <div class="cell" id="cell-3b"></div>
+                <div class="cell" id="cell-3c"></div>
+            </div>
+            <svg class="wonbar">
+                <line stroke-width="3vh" stroke="#010036" x1="0" y1="0" x2="0" y2="0" id="mySVG" />
+            </svg>
+        </div>
+
+        <div class="playerdisplay1" id="xdisplay">
+            <p class="playername">Player X</p>
+            <p class="playerwins">Wins: <span id="winsX">0</span></p>
+        </div>
+        <div class="playerdisplay2" id="odisplay">
+            <p class="playername">Player O</p>
+            <p class="playerwins">Wins: <span id="winsO">0</span></p>
+            <button id="changeplayer">Change To Bot</button>
+        </div>
+
+        <button class="resetbutton">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+:root {
+    --accent-color: #ffffff;
+    --accent-color-hover: #b1b1b1;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: whitesmoke;
+    background-color: #00233a;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size:2em;
+    text-align: center;
+}
+
+.divider{
+    width: 95%;
+    height: 0.5vh;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+}
+
+.container{
+    width: 40vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+    min-height: 70vh;
+}
+
+ul{
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item{
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid whitesmoke;
+    flex-direction: row;
+}
+
+button{
+    background-color: var(--accent-color);
+    /* border: 5px solid var(--accent-color-hover); */
+    border: none;
+    border-radius: 15px;
+    color:#00233a;
+    font-size: 1.5em;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    transition: transform 0.2s ease-in-out,
+    background-color 0.2s ease-in-out, 
+    border-color 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: var(--accent-color-hover);
+    /* border-color: var(--accent-color); */
+}
+
+button:active{
+    transform: scale(0.9);
+    background-color: var(--accent-color);
+    /* border-color: var(--accent-color-hover); */
+}
+
+form{
+    width: 100%;
+    margin: 0 auto;
+    left: 50%;
+}
+
+.inputbox{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+input{
+    width: 75%;
+    height: 6vh;
+    margin: 0 auto;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    transition:all 0.2s ease-in-out;
+} 
+
+input:focus{
+    outline: none;
+    transform: scale(1.02);
+}
+
+#addbutton, #searchbutton{
+    width: 15%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.hide{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}

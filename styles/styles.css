@@ -103,7 +103,7 @@ a:not(.no-effects){
     padding: 5px;
     margin: -5px;
     border-radius: 7px;
-    transition: transform 200ms ease-in-out;
+    transition: transform 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-sizing: border-box;
 }
 
@@ -181,7 +181,7 @@ a.vertical-stack{
 
 a.logo-anchor{
     padding: 0;
-    transition: transform 200ms ease-in-out;
+    transition: transform 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 a.logo-anchor:hover{
     background-color: transparent;
@@ -228,7 +228,7 @@ a.logo-anchor:hover{
 
 .blue-bigger-hovereffect{
     /* add color and transform transition */
-    transition: color 200ms ease-in-out, transform 200ms ease-in-out;
+    transition: color 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .blue-bigger-hovereffect:hover{
@@ -289,7 +289,7 @@ a.logo-anchor:hover{
     border: 5px solid var(--accent-green);
     border-radius: 5px;
     background-color: var(--background-color1);
-    transition: transform 200ms ease-in-out, border-color 200ms ease-in-out;
+    transition: transform 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .projectimg-container{
@@ -380,7 +380,7 @@ a.navbar{
     left: 50%;
     transform: translateX(-50%);
     color: var(--accent-lime);
-    transition: transform 200ms ease-in-out, color 200ms ease-in-out;
+    transition: transform 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275), color 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .scrolldown-arrow:hover{
@@ -393,6 +393,10 @@ a.navbar{
 /* .project:hover .projectname{
     color: var(--accent-blue);
 } */
+
+.pixelated{
+    image-rendering: pixelated;
+}
 
 @media all and (min-width: 1200px) {
     a:active:not(.no-effects){

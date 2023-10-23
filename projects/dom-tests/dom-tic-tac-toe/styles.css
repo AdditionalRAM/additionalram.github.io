@@ -1,0 +1,148 @@
+body{
+    background-color: #010036;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.divider{
+    border-bottom: 1px solid #fff;
+    width: 90%;
+    margin: 10px auto;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gameholder{
+    width: 70vh;
+    height: 70vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #02005a;
+    border-radius: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.playerdisplay1{
+    width: 40vh;
+    height: 70vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-20%, -50%);
+    background-color: #02005a;
+    border-radius: 5vh;
+}
+
+.playerdisplay2{
+    width: 40vh;
+    height: 70vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(20%, -50%);
+    background-color: #02005a;
+    border-radius: 5vh;
+    box-sizing: border-box;
+    /* outline: 2vh solid #020096; */
+}
+
+.playername, .playerwins{
+    text-align: center;
+    font-size: 2em;
+}
+
+.playername{
+    font-size: 2.5em;
+}
+
+button{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    margin: 0;
+    padding: 1.5vh;
+    background-color: #020096;
+    border: none;
+    border-radius: 2vh;
+    color: whitesmoke;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+button:hover{
+    background-color: #02005a;
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+    outline: 2px solid whitesmoke;
+}
+
+button:active{
+    transform: translate(-50%, -50%) scale(1);
+    outline: 2px solid #7c86bb;
+}
+
+.row{
+    height: 27%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cell{
+    width: 27%;
+    height: 100%;
+    background-color: #020096;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    cursor: pointer;
+    border-radius: 5vh;
+}
+
+.x, .o{
+    width: 80%;
+    height: 80%;
+    transform: scale(0);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wonbar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vh;
+    height: 70vh;
+}
+
+#mySVG{
+    width: 70vh;
+    height: 70vh;
+}
+
+.outliner{
+    outline: 2vh solid #020096;
+}
+
+.hidden{
+    display: none;
+}

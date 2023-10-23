@@ -1,0 +1,159 @@
+body{
+    background-color: #001449;
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 2vh auto;
+}
+
+.divider{
+    border-bottom: 1px solid #fff;
+    margin: 2vh auto;
+    width: 90%;
+}
+
+.listscontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.addnewlist{
+    margin: 5vh 0;
+    background-color: #000d30;
+    border-radius: 1vh;
+    width: 450px;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.addnewlist:hover{
+    background-color: #000a24;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.addnewlist:active{
+    background-color: #000d30;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.addnewlist p{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1vh;
+    margin: auto auto;
+    width: 100%;
+    box-sizing: border-box;
+    /* center vertically without flex */
+}
+
+input{
+    background-color: transparent;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+}
+
+.listtitle{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1vh;
+    margin: 1vh auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.listcontainer{
+    background-color: #000d30;
+    border-radius: 1vh;
+    width: 450px;
+    min-height: 600px;
+    height: fit-content;
+    margin: 5vh 0;
+}
+
+.listparent{
+    margin: 2vh auto;
+    width: 90%;
+    min-height: 500px;
+    border-radius: 1vh;
+    background-color: #001449;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+}
+
+.listitem{
+    margin: 1.5vh auto;
+    padding: 1.5vh;
+    width: 90%;
+    height: fit-content;
+    border-radius: 1vh;
+    background-color: #0043fc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.listitem.itemname{
+    flex-grow: 1;
+    width: 100%;
+}
+
+.addnewitem{
+    background-color: #002ead;
+    transition: all 0.2s ease-in-out;
+}
+
+.addnewlabel{
+    text-align: center;
+}
+
+.addnewitem:hover{
+    background-color: #002999;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.addnewitem:active{
+    background-color: #002ead;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+button{
+    background-color:#002999;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 1vh;
+    padding: 1vh;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: #002599;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+button:active{
+    background-color: #002999;
+    cursor: pointer;
+    transform: scale(1.05);
+}
