@@ -1,0 +1,3 @@
+[submodule "previews/simphase"]
+	path = previews/simphase
+	url = https://github.com/AdditionalRAM/simphase
