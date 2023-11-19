@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdditionalRAM Social Media Link</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <header>
+        <a class="logo-anchor navbar" href="../index.html">
+            <div class="logo-container">
+                <img class="logo" src="../images/addram-logo.png" alt="AdditionalRAM Logo" />
+                <img class="logo logotext" src="../images/addram-text.png" alt="AdditionalRAM Logo Text" />
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a class="navbar" href="../index.html">Home</a></li>
+                <li><a class="navbar" href="../projects">Projects</a></li>
+                <li><a class="navbar" href="../contact">Contact</a></li>
+                <li><a class="navbar" id="darkmode">Dark</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="height: 82vh;">
+        <h1 class="specialfont totransition">Outside Link</h1>
+        <p class="totransition">The intended purpose of the link on this preview website was to lead to an external site, potentially a social media page.</p>
+        <p class="totransition">Due to the preview nature of this site, the social media links are not operational.</p>
+        <button class="scrolldown-arrow" id="backButton">Back</button>
+    </main>
+    <script src="../scripts/transitioningeffect.js"></script>      
+    <script src="../scripts/darklightswitcher.js"></script>    
+    <script>
+        document.getElementById('backButton').addEventListener('click', function () {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>
