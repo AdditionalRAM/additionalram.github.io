@@ -1,4 +1,3 @@
-<!--Generic html structure-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,25 +7,17 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $("#header-holder").load("/components/header.html", () => {
+                $(document).trigger("headerLoaded");
+            });
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <a class="logo-anchor navbar" href="../index.html">
-            <div class="logo-container">
-                <img class="logo" src="../images/addram-logo.png" alt="AdditionalRAM Logo" />
-                <img class="logo logotext" src="../images/addram-text.png" alt="AdditionalRAM Logo Text" />
-            </div>
-        </a>
-        <nav>
-            <ul>
-                <li><a class="navbar" href="../index.html">Home</a></li>
-                <!-- <li><a class="navbar" href="../resume">Resume</a></li> -->
-                <li><a class="navbar" href="../projects">Projects</a></li>
-                <li><a class="navbar" href="../contact">Contact</a></li>
-                <li><a class="navbar" id="darkmode">Dark</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="header-holder"></header>
     <main>
         <h1 class="sr-only">Home</h1>
         <div class="welcome-parent">
@@ -38,19 +29,25 @@
             </div>
             <button class="scrolldown-arrow" id="scrollButton">↓</button>
         </div>
+        <div class="rampp">
+            <h2 class="specialfont totransition">RAM++</h2>
+            <p class="totransition">RAM++ is a community for developers and tech enthusiasts.</p>
+            <p class="totransition">Networking is crucial in development, which is something I failed to realize when getting started.</p>
+            <p class="totransition">For that reason, I created <strong>RAM++</strong>, a community where you can meet, connect and collaborate with other developers.</p>
+            <p class="totransition">Regardless of whether you're a beginner or an experienced developer, make sure to check out <a href="../rpp">RAM++</a>!</p>
+        </div>
         <div class="about-me">
             <h2 class="specialfont totransition">About Me</h2>
             <p class="totransition">I am located in Germany and currently studying high school. My absolute favorite hobby is programming.</p>
             <p class="totransition">I started learning programming when my father sent me to a course while I was in second grade (2014), where I learnt Scratch and Lego Mindstorms.</p>
             <p class="totransition">Since then, I have gone to other courses too. But mostly I have been learning how to code on my own, at home.</p>
-            <p class="totransition">In 2018, I started learning Game Development with (unfortunately) Unity and C#. In 2023, I finished the Responsive Web Design certification on <a href="https://www.freecodecamp.org/certification/additionalram/responsive-web-design" target="_blank">freeCodeCamp</a>. </p>
-            <p class="totransition">If you're interested, make sure to check out my projects in the <a href="../projects">Projects</a> page!</p>
+            <p class="totransition">In 2018, I started learning Game Development with (unfortunately) Unity and C#. In 2023, I started learning web development and received certificates on <a href="https://www.freecodecamp.org/certification/additionalram/responsive-web-design" target="_blank">freeCodeCamp</a>. </p>
+            <p class="totransition">If you're interested, make sure to check out my projects in the <a href="../projects/">Projects</a> page!</p>
         </div>
         <div class="my-goals">
             <h2 class="specialfont totransition">My Goals</h2>
-            <p class="totransition">My current goal is to finish learning JavaScript in order to better use it for frontend and backend development.</p>
-            <p class="totransition">I am also aiming to make multiple websites for local stores, at first free of charge, in order to expand my web development portfolio.</p>
-            <p class="totransition">I also want to earn enough money before February 2024 in order to purchase a tablet that I can use at school and finally get rid of the pen and paper.</p>
+            <p class="totransition">My end goal is to become a full stack developer.</p>
+            <p class="totransition">For now, I am learning front end, gaining experience and extending my portfolio.</p>
         </div>
         <div class="work-together">
             <h2 class="specialfont totransition">Let's Work Together!</h2>

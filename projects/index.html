@@ -7,26 +7,18 @@
     <title>AdditionalRAM Projects</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $("#header-holder").load("/components/header.html", () => {
+                $(document).trigger("headerLoaded");
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <header>
-        <a class="logo-anchor navbar" href="../index.html">
-            <div class="logo-container">
-                <img class="logo" src="../images/addram-logo.png" alt="AdditionalRAM Logo" />
-                <img class="logo logotext" src="../images/addram-text.png" alt="AdditionalRAM Logo Text" />
-            </div>
-        </a>
-        <nav>
-            <ul>
-                <li><a class="navbar" href="../index.html">Home</a></li>
-                <!-- <li><a class="navbar" href="../resume">Resume</a></li> -->
-                <li><a class="navbar" href="../projects">Projects</a></li>
-                <li><a class="navbar" href="../contact">Contact</a></li>
-                <li><a class="navbar" id="darkmode">Dark</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="header-holder"></header>
     <main>
         <h1 class="sr-only">Projects</h1>
         <h2 class="specialfont totransition">My fCC Certificates</h2>

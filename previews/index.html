@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AdditionalRAM Preview Sites</title>
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $("#header-holder").load("/components/header.html", () => {
+                $(document).trigger("headerLoaded");
+            });
+        });
+    </script>
 </head>
+
 <body>
-    <header>
-        <a class="logo-anchor navbar" href="/index.html">
-            <div class="logo-container">
-                <img class="logo" src="/images/addram-logo.png" alt="AdditionalRAM Logo" />
-                <img class="logo logotext" src="/images/addram-text.png" alt="AdditionalRAM Logo Text" />
-            </div>
-        </a>
-        <nav>
-            <ul>
-                <li><a class="navbar" href="/index.html">Home</a></li>
-                <li><a class="navbar" href="/projects">Projects</a></li>
-                <li><a class="navbar" href="/contact">Contact</a></li>
-                <li><a class="navbar" id="darkmode">Dark</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="header-holder"></header>
     <main>
         <h1 class="sr-only">Preview Sites</h1>
         <h2 class="specialfont totransition">Preview Sites</h2>
@@ -34,8 +30,8 @@
                     <div class="projectname-container">
                         <p class="specialfont projectname totransition">SIMPHASE</p>
                     </div>
-                    <div class="projectimg-container"><img class="projectimg pixelated dark" src="/images/projects/dark/simphase-preview.png"
-                            alt="List icon" loading="lazy" /></div>
+                    <div class="projectimg-container"><img class="projectimg pixelated dark"
+                            src="/images/projects/dark/simphase-preview.png" alt="List icon" loading="lazy" /></div>
                     <div class="project-desc-container">
                         <p class="project-desc">A clone of my father's website, simphase.de</p>
                     </div>
@@ -44,6 +40,7 @@
         </div>
     </main>
     <script src="/scripts/transitioningeffect.js"></script>
-    <script src="/scripts/darklightswitcher.js"></script>    
+    <script src="/scripts/darklightswitcher.js"></script>
 </body>
+
 </html>
