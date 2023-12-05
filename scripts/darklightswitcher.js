@@ -115,7 +115,13 @@ $(document).on("headerLoaded", () => {
                 let logoLeftPadding = parseInt(logoStyle.getPropertyValue("padding-left"));
                 let logoMarginLeft = parseInt(logoStyle.getPropertyValue("margin-left"));
 
-                darkButton.style.right = (logoAnchorLeftPadding + logoAnchorMarginLeft + logoLeftPadding + logoMarginLeft) + "px";
+                let darkButtonStyle = window.getComputedStyle(darkButton);
+                let darkButtonRightPadding = parseInt(darkButtonStyle.getPropertyValue("padding-right"));
+                let darkButtonRightMargin = parseInt(darkButtonStyle.getPropertyValue("margin-right"));
+
+                darkButton.style.right = ((logoAnchorLeftPadding + logoAnchorMarginLeft + logoLeftPadding + logoMarginLeft) -
+                 (darkButtonRightPadding + darkButtonRightMargin)
+                ) + "px";
             }
             else{
                 darkButton.style.position = "relative";
