@@ -1,7 +1,7 @@
 $(document).on("headerLoaded", () => {
     const root = document.querySelector(':root');
     let normalNavbarColor = document.querySelector(".navbar").style.color;
-    const darkButton = document.querySelector('#darkmode');
+    let darkButton = document.querySelector('#darkmode');
     const varList = [
         '--background-color1',
         '--background-color2',
@@ -45,7 +45,7 @@ $(document).on("headerLoaded", () => {
         updateColors();
     });
 
-    function updateColors() {
+    function updateColors() {        
         if (darkMode) {
             for (let i = 0; i < varList.length; i++) {
                 root.style.setProperty(varList[i], darkColors[i]);
@@ -56,6 +56,9 @@ $(document).on("headerLoaded", () => {
             document.querySelectorAll("img").forEach((e) => {
                 if (e.src.includes("light"))
                     e.src = e.src.replace("light", "dark");
+            });
+            document.querySelectorAll(".logo").forEach((e) => {
+                e.style.filter = "none";
             });
         } else {
             for (let i = 0; i < varList.length; i++) {
@@ -68,8 +71,64 @@ $(document).on("headerLoaded", () => {
                 if (e.src.includes("dark"))
                     e.src = e.src.replace("dark", "light");
             });
+            document.querySelectorAll(".logo").forEach((e) => {
+                e.style.filter = "invert(100%)";
+            });
         }
-        darkButton.textContent = darkMode ? "Dark" : "Light";
+        // const darkHTML = '<img class="dark-mode-icon" src="/images/icons/dark-mode.svg" alt="Dark" />';
+        // const lightHTML = '<img class="light-mode-icon" src="/images/icons/light-mode.svg" alt="Light" />';
+        // change color of darkHTML/lightHTML here
+        // darkButton.innerHTML = darkMode ?  darkHTML : lightHTML;
+        const darkIcon = document.querySelector(".dark-mode-icon");
+        const lightIcon = document.querySelector(".light-mode-icon");
+        // active icon gets .mode-icon-enabled, inactive gets .mode-icon-disabled
+        if (darkMode) {
+            darkIcon.classList.add("mode-icon-enabled");
+            lightIcon.classList.remove("mode-icon-enabled");
+            darkIcon.classList.remove("mode-icon-disabled");
+            lightIcon.classList.add("mode-icon-disabled");
+        } else {
+            darkIcon.classList.remove("mode-icon-enabled");
+            lightIcon.classList.add("mode-icon-enabled");
+            darkIcon.classList.add("mode-icon-disabled");
+            lightIcon.classList.remove("mode-icon-disabled");
+        }
+
+        let darkButtonPositioning = () => {
+            const mediaQuery = window.matchMedia('(max-width: 1200px)');
+            if (mediaQuery.matches) {
+                darkButton.style.position = "absolute";
+                const logoText = document.querySelector(".logo.logotext");
+                // set height same as logotext
+                darkButton.style.height = logoText.clientHeight + "px";
+                // put button in same position as .logo.logotext
+                darkButton.style.top = logoText.offsetTop + "px";
+                // allign left of this with right of .logo.logotext parent
+                let logo = document.querySelector(".logo");
+                // get .logo-anchor left padding + margin
+                let logoAnchor = document.querySelector(".logo-anchor");
+                let logoAnchorStyle = window.getComputedStyle(logoAnchor);
+                let logoAnchorLeftPadding = parseInt(logoAnchorStyle.getPropertyValue("padding-left"));
+                let logoAnchorMarginLeft = parseInt(logoAnchorStyle.getPropertyValue("margin-left"));
+                // get .logo left padding + margin
+                let logoStyle = window.getComputedStyle(logo);
+                let logoLeftPadding = parseInt(logoStyle.getPropertyValue("padding-left"));
+                let logoMarginLeft = parseInt(logoStyle.getPropertyValue("margin-left"));
+
+                darkButton.style.right = (logoAnchorLeftPadding + logoAnchorMarginLeft + logoLeftPadding + logoMarginLeft) + "px";
+            }
+            else{
+                darkButton.style.position = "relative";
+                darkButton.style.height = "auto";
+                darkButton.style.top = "auto";
+                darkButton.style.right = "auto";
+            }
+        };
+
+        // call darkButtonPositioning on load and on resize
+        darkButtonPositioning();
+        window.addEventListener("resize", darkButtonPositioning);
+        
         localStorage.setItem("darkMode", darkMode);
     }
 });
