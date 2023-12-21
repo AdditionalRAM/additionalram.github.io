@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <title>TILTED</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>TILTED</h1>
+            <p class="h1-desc">PRESS START</p>
+        </div>
+        <div class="nav-holder">
+            <a class="nav-link" href="#intro">ABOUT US</a>
+            <a class="nav-link" href="#reviews">REVIEWS</a>
+            <a class="nav-link" href="#gallery">GALLERY</a>
+            <a class="nav-link" href="#contact">CONTACT</a>
+        </div>
+        <button class="nav-button" id="mobile-hamburger">
+            <img id="menu-burger-icon" class="mode-icon open" src="./images/icons/hamburger.svg" alt="Menu Icon" />
+            <img id="menu-close-icon" class="mode-icon" src="./images/icons/close.svg" alt="Close Icon" />
+        </button>
+        <div class="mobile-nav-menu" id="mobile-nav-menu">
+            <a class="nav-link" href="#intro">ABOUT US</a>
+            <a class="nav-link" href="#reviews">REVIEWS</a>
+            <a class="nav-link" href="#gallery">GALLERY</a>
+            <a class="nav-link" href="#contact">CONTACT</a>
+        </div>
+    </header>
+    <div class="background-imagery">
+        <img src="./images/background/bcg-megaman.png" class="parallax background bottom-left" alt="Megaman Image">
+        <!-- <img src="./images/background/bcg-sonic.png" class="background bottom-left" alt="Sonic Image"> -->
+        <img id="bcg-mario" src="./images/background/bcg-mario.png" class="parallax background bottom-right" alt="Mario Image">
+        <img src="./images/background/bcg-pacman.png" class="background top-right parallax" alt="Pacman Image">
+    </div>
+    <div id="gallery-image-view">
+        <button id="gallery-close"><img src="./images/icons/close.svg" alt="Close Icon"></button>
+        <button id="gallery-left"><img src="./images/icons/chevron-left.svg" alt="Last"></button>
+        <button id="gallery-right"><img src="./images/icons/chevron-right.svg" alt="Next"></button>
+        <div>
+            <img id="gallery-image-view-image" src="" alt="Gallery Image">
+        </div>
+    </div>
+    <section id="intro">
+        <h2 class="sr-only">ABOUT US</h2>
+        <div class="info-box-container">
+            <div class="box info-box totransition">
+                <p>We are a shop for buying and selling new and used games and gaming systems</p>
+            </div>
+            <div class="box info-box totransition">
+                <p>Get the most popular and latest games from us at affordable prices</p>
+            </div>
+            <div class="box info-box totransition">
+                <p>Explore a huge selection of classics and current hits for a wide range of systems</p>
+            </div>
+            <div class="box info-box totransition">
+                <p>Bring in your old games and receive fair offers for sale or exchange</p>
+            </div>            
+        </div>
+    </section>
+    <section id="reviews">
+        <h2 class="totransition">REVIEWS</h2>
+        <div class="review-holder">
+            <div class="box review totransition">
+                <div class="star-holder">
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star unfilled" src="./images/icons/star-unfilled.svg" alt="Star Icon" />
+                </div>
+                <p class="review-text">"This store is truly my favorite. The trading prices are fair. You can find pretty much every game you could ever want."</p>
+                <p class="review-author">- BoxedByPraxo</p>
+            </div>
+            <div class="box review totransition">
+                <div class="star-holder">
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star unfilled" src="./images/icons/star-unfilled.svg" alt="Star Icon" />
+                </div>
+                <p class="review-text">"Nice store, very cool"</p>
+                <p class="review-author">- AdditionalRAM</p>
+            </div>
+            <div class="box review totransition">
+                <div class="star-holder">
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star filled" src="./images/icons/star-filled.svg" alt="Star Icon" />
+                    <img class="star unfilled" src="./images/icons/star-unfilled.svg" alt="Star Icon" />
+                </div>
+                <p class="review-text">"Ever since I shopped at this store I became cracked at Fortnite"</p>
+                <p class="review-author">- sussybooldelta</p>
+            </div>
+        </div>
+        <div class="link-holder totransition">
+            <a href="https://additionalram.com/social-media-preview/" target="_blank">MORE REVIEWS</a>
+            <a href="https://additionalram.com/social-media-preview/" target="_blank">WRITE REVIEW</a>
+        </div>
+    </section>
+    <section id="gallery">
+        <h2 class="totransition">GALLERY</h2>
+        <div id="gallery-holder">
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="totransition">CONTACT</h2>
+        <div id="map-holder" class="map-holder totransition">
+            <!-- button to load map for GDPR compliance -->
+            <div class="gdpr-button-holder">
+                <button id="load-map" class="map-button">LOAD GOOGLE MAPS</button>
+                <p class="totransition">By loading the map, your personal data may be exposed to third parties.</p>
+            </div>
+        </div>
+        <div class="contact-box-container">
+            <a class="contact-box-anchor normalfont totransition" href="https://additionalram.com/social-media-preview/" target="_blank"><div class="contact-box box">
+                <img class="invert-img" src="./images/icons/phone.svg" alt="Phone Icon" />
+                <p>+49 12345678</p>
+            </div></a>
+            <a class="contact-box-anchor normalfont totransition" href="https://additionalram.com/social-media-preview/" target="_blank"><div class="contact-box box">
+                <img class="invert-img" src="./images/icons/pin-drop.svg" alt="Pindrop Icon" />
+                <p>
+                    Brandenburger Tor <br />
+                    Pariser Platz <br />
+                    10117 Berlin
+                </p>
+            </div></a>
+            <a class="contact-box-anchor normalfont totransition" href="https://additionalram.com/social-media-preview/" target="_blank"><div class="contact-box box">
+                <img class="invert-img" src="./images/icons/mail.svg" alt="Mail Icon" />
+                <p>someone@example.com</p>
+            </div></a>
+        </div>
+
+    </section>
+    <div class="whitespace" style="height: 20vh;"></div>
+
+    <script src="./scripts/parallax.js"></script>
+    <script src="./scripts/gallery.js"></script>
+    <script src="./scripts/mobile-header.js"></script>
+    <script src="./scripts/scroll-effects.js"></script>
+    <script src="./scripts/gdpr-map.js"></script>
+</body>
+</html>
