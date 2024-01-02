@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
             var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
             if (distInView < 0) {
                 elem.classList.add("inView");
+
+                setTimeout(classRemover(elem, "totransition"), 400)
+
+                
                 if ((
                     elem.classList.contains('specialfont') ||
                     elem.classList.contains('h1-desc') ||
@@ -16,9 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 ) && !elem.id.includes('imaddram')) {
                     slowlyRandomize(elem);
                 }
-            } else {
-                elem.classList.remove("inView");
-            }
+            } 
+            // else {
+            //     elem.classList.remove("inView");
+            // }
         }
     }
     fadeIn();
@@ -53,3 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return newString;
     }
 });
+
+function classRemover(element, classToRemove){
+    return function(){
+        element.classList.remove(classToRemove);
+    }
+}
