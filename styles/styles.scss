@@ -84,14 +84,13 @@ h3.specialfont {
 }
 
 
-
-
 .logo-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
     /* Adjust the margin as needed for spacing */
+
     .logo {
         image-rendering: pixelated;
         height: 10vh;
@@ -134,8 +133,8 @@ a{
         text-align: center;
     }
     &.logo-anchor{
-        padding: 0;
-        margin: 0;
+        padding: 2vh 2vw;
+        margin: 1vw;
         &:hover{
             background-color: transparent;
             transform: scale(1.05);

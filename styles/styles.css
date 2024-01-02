@@ -136,8 +136,8 @@ a.vertical-stack {
   text-align: center;
 }
 a.logo-anchor {
-  padding: 0;
-  margin: 0;
+  padding: 2vh 2vw;
+  margin: 1vw;
 }
 a.logo-anchor:hover {
   background-color: transparent;
