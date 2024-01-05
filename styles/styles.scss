@@ -25,10 +25,10 @@ body {
     margin-top: 10vh;
     margin-bottom: 1vh;
     width: max(90vw, 1200px);
-    background-color: var(--background-color2);
+    // background-color: var(--background-color2);
     color: var(--text-color);
     font-family: 'Comfortaa', sans-serif;
-    border: 7px solid var(--accent-green);
+    // border: 7px solid var(--accent-green);
     border-radius: 5px;
     overflow-x: hidden;
 }
@@ -548,6 +548,8 @@ nav {
             align-items: baseline;
             justify-content: center;
             flex-wrap: wrap;
+            width: 70%;
+            margin: 0 auto;
         }
     }
 }
@@ -557,6 +559,7 @@ nav {
     flex-direction: row;
     align-items: end;
     justify-content: center;
+    margin: 0 2vw;
     margin-bottom: -2vh;
     height: 7vh;
     .tab-switcher{
@@ -577,6 +580,13 @@ nav {
 
         transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
+        cursor: pointer;
+        &:hover{
+            background-color: var(--accent-blue);
+            color: var(--background-color2);
+            height: 5.5vh;
+            font-size: 3.3vh;
+        }
         &.tab-active{
             background-color: var(--accent-lime);
             color: var(--background-color2);
@@ -587,7 +597,8 @@ nav {
 }
 
 .project{
-    width: 300px;
+    width: 25%;
+    margin: 2vh;
     .img-container{
         width: 100%;
         aspect-ratio: 1/1;
@@ -781,6 +792,21 @@ a:hover .dark-mode-icon {
     //     }
     // }
 
+    #tabs-container{
+        .tab-content{
+            &.active{
+                width: 100%;
+            }
+        }
+    }
+
+    .project{
+        width: 40%;
+        margin: 0;
+        .title{
+            font-size: 1.2em;
+        }
+    }
     
     
     .divanchor {

@@ -7,7 +7,7 @@
           "id": "responsive-web-design",
           "title": "Responsive Web Design",
           "link": "https://www.freecodecamp.org/certification/AdditionalRAM/responsive-web-design",
-          "imgSrc": "../images/certs/responsive-web-design-dark.png",
+          "imgSrc": "../images/projects/dark/responsive-design.png",
           "description": "Click to verify certificate on freeCodeCamp.org.",
           "pixelated": false
         },
@@ -15,7 +15,7 @@
           "id": "javascript-algorithms",
           "title": "JavaScript Algorithms and Data Structures",
           "link": "https://www.freecodecamp.org/certification/AdditionalRAM/javascript-algorithms-and-data-structures",
-          "imgSrc": "../images/certs/javascript-algorithms-dark.png",
+          "imgSrc": "../images/projects/dark/js.png",
           "description": "Click to verify certificate on freeCodeCamp.org.",
           "pixelated": false
         },
@@ -23,7 +23,15 @@
           "id": "frontend-libraries",
           "title": "Front End Development Libraries (React)",
           "link": "https://www.freecodecamp.org/certification/AdditionalRAM/front-end-development-libraries",
-          "imgSrc": "../images/certs/frontend-libraries-dark.png",
+          "imgSrc": "../images/projects/dark/react.png",
+          "description": "Click to verify certificate on freeCodeCamp.org.",
+          "pixelated": false
+        },
+        {
+          "id": "data-visualisation",
+          "title": "Data Visualisation (D3)",
+          "link": "https://www.freecodecamp.org/certification/AdditionalRAM/data-visualization",
+          "imgSrc": "../images/projects/dark/d3.png",
           "description": "Click to verify certificate on freeCodeCamp.org.",
           "pixelated": false
         }
@@ -43,7 +51,7 @@
         },
         {
           "id": "additionalram-com",
-          "title": "additionalram.com",
+          "title": "additionalram .com",
           "link": "http://additionalram.com",
           "imgSrc": "../images/projects/dark/addram-site-preview.png",
           "description": "AdditionalRAM's personal website. It's the website you're looking at right now.",

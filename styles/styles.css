@@ -35,10 +35,8 @@ body {
   margin-top: 10vh;
   margin-bottom: 1vh;
   width: max(90vw, 1200px);
-  background-color: var(--background-color2);
   color: var(--text-color);
   font-family: "Comfortaa", sans-serif;
-  border: 7px solid var(--accent-green);
   border-radius: 5px;
   overflow-x: hidden;
 }
@@ -541,6 +539,8 @@ nav a.navbar {
   align-items: baseline;
   justify-content: center;
   flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
 }
 
 #tab-switchers {
@@ -548,6 +548,7 @@ nav a.navbar {
   flex-direction: row;
   align-items: end;
   justify-content: center;
+  margin: 0 2vw;
   margin-bottom: -2vh;
   height: 7vh;
 }
@@ -563,6 +564,13 @@ nav a.navbar {
   width: calc(4vw + 5em);
   height: 5vh;
   transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+#tab-switchers .tab-switcher:hover {
+  background-color: var(--accent-blue);
+  color: var(--background-color2);
+  height: 5.5vh;
+  font-size: 3.3vh;
 }
 #tab-switchers .tab-switcher.tab-active {
   background-color: var(--accent-lime);
@@ -572,7 +580,8 @@ nav a.navbar {
 }
 
 .project {
-  width: 300px;
+  width: 25%;
+  margin: 2vh;
   padding: 2vh;
   cursor: pointer;
   transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -715,6 +724,16 @@ a:hover .dark-mode-icon {
   nav a {
     padding: -2px 25px;
     margin: 0;
+  }
+  #tabs-container .tab-content.active {
+    width: 100%;
+  }
+  .project {
+    width: 40%;
+    margin: 0;
+  }
+  .project .title {
+    font-size: 1.2em;
   }
   .divanchor {
     margin: 0;
