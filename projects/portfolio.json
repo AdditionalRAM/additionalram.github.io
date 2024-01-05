@@ -1,0 +1,163 @@
+{
+    "fccTab": {
+      "title": "fCC",
+      "icon": "",
+      "children": [
+        {
+          "id": "responsive-web-design",
+          "title": "Responsive Web Design",
+          "link": "https://www.freecodecamp.org/certification/AdditionalRAM/responsive-web-design",
+          "imgSrc": "../images/certs/responsive-web-design-dark.png",
+          "description": "Click to verify certificate on freeCodeCamp.org.",
+          "pixelated": false
+        },
+        {
+          "id": "javascript-algorithms",
+          "title": "JavaScript Algorithms and Data Structures",
+          "link": "https://www.freecodecamp.org/certification/AdditionalRAM/javascript-algorithms-and-data-structures",
+          "imgSrc": "../images/certs/javascript-algorithms-dark.png",
+          "description": "Click to verify certificate on freeCodeCamp.org.",
+          "pixelated": false
+        },
+        {
+          "id": "frontend-libraries",
+          "title": "Front End Development Libraries (React)",
+          "link": "https://www.freecodecamp.org/certification/AdditionalRAM/front-end-development-libraries",
+          "imgSrc": "../images/certs/frontend-libraries-dark.png",
+          "description": "Click to verify certificate on freeCodeCamp.org.",
+          "pixelated": false
+        }
+      ]
+    },
+    "webTab": {
+      "title": "Web",
+      "icon": "",
+      "children": [
+        {
+          "id": "your-website",
+          "title": "Your Website",
+          "link": "../contact",
+          "imgSrc": "../images/projects/dark/yourwebsite-preview.png",
+          "description": "Need a website or a refresh? I'm happy to help, at very competitive prices (free)! If you're interested, click here to contact me.",
+          "pixelated": false
+        },
+        {
+          "id": "additionalram-com",
+          "title": "additionalram.com",
+          "link": "http://additionalram.com",
+          "imgSrc": "../images/projects/dark/addram-site-preview.png",
+          "description": "AdditionalRAM's personal website. It's the website you're looking at right now.",
+          "pixelated": false
+        },
+        {
+          "id": "simphase",
+          "title": "SIMPHASE",
+          "link": "./simphase/index.html",
+          "imgSrc": "/images/projects/dark/simphase-preview.png",
+          "description": "A clone of my father's website, simphase.de",
+          "pixelated": false
+        },
+        {
+          "id": "tilted-games",
+          "title": "TILTED GAMES",
+          "link": "./tilted-gaming-store/index.html",
+          "imgSrc": "/images/projects/dark/tilted-cover.png",
+          "description": "This website is an example for a used video game thrift store",
+          "pixelated": false
+        }
+      ]
+    },
+    "domTab": {
+      "title": "DOM",
+      "icon": "",
+      "children": [
+        {
+          "id": "dom-simple-list",
+          "title": "DOM Simple List",
+          "link": "./dom-simple-list/index.html",
+          "imgSrc": "/images/projects/dark/dom-tests/list.png",
+          "description": "First DOM project ever. Add and remove stuff from a simple list, hide and search.",
+          "pixelated": true
+        },
+        {
+          "id": "dom-simple-calculator",
+          "title": "DOM Simple Calculator",
+          "link": "./dom-simple-calculator/index.html",
+          "imgSrc": "/images/projects/dark/dom-tests/calculator.png",
+          "description": "Very simple calculator app using eval() function.",
+          "pixelated": true
+        },
+        {
+          "id": "dom-simple-todo",
+          "title": "DOM Simple To-Do",
+          "link": "./dom-simple-todo/index.html",
+          "imgSrc": "/images/projects/dark/dom-tests/todo.png",
+          "description": "To Do project app, can add lists, items and checks. Saves using local storage.",
+          "pixelated": true
+        },
+        {
+          "id": "dom-random-quote",
+          "title": "DOM Random Quote Generator",
+          "link": "./dom-random-quote/index.html",
+          "imgSrc": "/images/projects/dark/dom-tests/quote.png",
+          "description": "Gets a random quote from api.quotable.io and displays using the DOM.",
+          "pixelated": true
+        },
+        {
+          "id": "dom-tictactoe",
+          "title": "DOM Tic Tac Toe",
+          "link": "./dom-tic-tac-toe/index.html",
+          "imgSrc": "/images/projects/dark/dom-tests/xox.png",
+          "description": "Tic Tac Toe game between two players, bot implementation unfinished",
+          "pixelated": true
+        },
+        {
+          "id": "dom-weather",
+          "title": "DOM Weather",
+          "link": "./dom-weather/index.html",
+          "imgSrc": "/images/projects/dark/dom-tests/weather.png",
+          "description": "Uses api.open-meteo.com to get hourly weather for 3 days.",
+          "pixelated": true
+        }
+      ]
+    },
+    "otherTab": {
+      "title": "Other",
+      "icon": "",
+      "children": [
+        {
+          "id": "moneywars",
+          "title": "Money Wars",
+          "link": "",
+          "imgSrc": "../images/projects/dark/mw-preview-whowouldwin.png",
+          "description": "Mobile multiplayer strategy turn-based game (unfortunately) made with Unity C# and Unity Netcode for GameObjects. Unfinished.",
+          "pixelated": false
+        },
+        {
+          "id": "mwa",
+          "title": "Mini World Adventures",
+          "link": "https://additionalram.itch.io/mini-world-adventures",
+          "imgSrc": "../images/projects/dark/mwa/mwa-preview.png",
+          "description": "A quite traditional top-down Action-Adventure game with a nice story.",
+          "pixelated": false
+        },
+        {
+          "id": "addcef",
+          "title": "AddCEF",
+          "link": "https://github.com/AdditionalRAM/AddCEF",
+          "imgSrc": "../images/projects/dark/addcef-preview.png",
+          "description": "A decent attempt at automating porting of web applications to Windows, made using Python, Nuitka, CEF, and miniweb",
+          "pixelated": false
+        },
+        {
+          "id": "fpat",
+          "title": "Five Periods at Timeler's",
+          "link": "https://additionalram.itch.io/fpat",
+          "imgSrc": "../images/projects/dark/fpat-preview.png",
+          "description": "An Undertale style turn based combat game. Based on my maths teacher, made as a joke.",
+          "pixelated": false
+        }
+      ]
+    }
+  }
+  
