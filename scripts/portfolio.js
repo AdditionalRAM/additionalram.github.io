@@ -24,7 +24,7 @@ function switchTab(tabIndex, clickedElement){
 
 async function fetchPortfolioData() {
     try {
-        const response = await fetch('../projects/portfolio.json'); // Fetch the JSON file from the projects folder
+        const response = await fetch('../portfolio/portfolio.json'); // Fetch the JSON file from the projects folder
         if (!response.ok) {
             throw new Error('Network response was not ok.');
         }
@@ -77,4 +77,5 @@ function populateTabs(data){
     }
     switchTab(0, $('#fccTabSwitcher'));
     initTransitions();
+    updateColors();
 }
