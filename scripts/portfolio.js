@@ -9,8 +9,20 @@ $(document).ready(() => {
 
 
 function switchTab(tabIndex, clickedElement){
-    tabs.forEach(tab => {
+    tabs.forEach((tab, index) => {
         $(tab).removeClass("active");
+        if(index < tabIndex){
+            $(tab).addClass("left");
+            $(tab).removeClass("right");  
+        }
+        else if(index > tabIndex){
+            $(tab).addClass("right");
+            $(tab).removeClass("left");
+        }
+        else{
+            $(tab).removeClass("right");
+            $(tab).removeClass("left");
+        }
     });
     // show tab with index
     $(tabs[tabIndex]).addClass("active");
@@ -36,8 +48,10 @@ async function fetchPortfolioData() {
     }
 }
 
+let parsedData = null;
 
 function populateTabs(data){
+    parsedData = data;
     const tabsContainer = $('#tabs-container');
     const tabSwitcher = $('#tab-switchers');
     tabsContainer.empty();
@@ -65,17 +79,58 @@ function populateTabs(data){
         for (let j = 0; j < projects.length; j++) {
             const project = projects[j];
             const projectHTML = `
-            <div class="project totransition">
+            <div class="project" data-projectJSON=${[i, j]}>
                 <div class="img-container">
                     <img ${project.pixelated ? 'style="image-rendering: pixelated"' : ""} src="${project.imgSrc}" alt="${project.title} Icon" loading="lazy">
                 </div>
-                <p class="title totransition">${project.title}</p>
+                <p class="title">${project.title}</p>
             </div>
             `;
             tab.append(projectHTML);
+            //  get referenced to just appended project
+            const projectElement = tab.children().last();
+            // add click listener
+            projectElement.click((event) => {
+                // Open modal by passing the clicked project element
+                openPopup(event.currentTarget);
+            });
         }
     }
     switchTab(0, $('#fccTabSwitcher'));
     initTransitions();
     updateColors();
+}
+
+function openPopup(project){
+    const popup = $('#popup');
+
+    const projectDataTag = $(project).data('projectjson');
+    // structure: [0,1]
+    // parse to array
+    const projectJSON = projectDataTag.split(',').map(Number);
+    // const projectData => [n-th key in parsedData, n-th project in that key's children array]
+    const projectData = parsedData[Object.keys(parsedData)[projectJSON[0]]].children[projectJSON[1]];
+
+    $("#popup-close-button").click(closePopup);
+    $("#popup-title").text(projectData.title);
+    $("#popup-desc").text(projectData.description);
+    $("#popup-img").attr('src', projectData.imgSrc);
+    $("#popup-img").attr('alt', projectData.title);
+    $("#popup-img").css('image-rendering', projectData.pixelated ? 'pixelated' : 'auto');
+    $("#popup-link").attr('href', projectData.link);
+    
+    popup.addClass('active');
+
+    // disable scrolling
+    $("body").css('overflow', 'hidden');
+}
+
+function closePopup() {
+    const popup = $('#popup');
+    // const project = $("#popup .project");
+    // parent.children().eq(index - 1).after(project);
+    popup.removeClass('active');
+    $("#popup-close-button").off('click');
+    // re enable scrolling
+    $("body").css('overflow', "");
 }

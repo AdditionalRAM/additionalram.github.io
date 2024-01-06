@@ -26,6 +26,29 @@
         <div class="seperator-bar"></div>
         <div id="tabs-container">
             <p class="specialfont" style="text-align: center; font-size: 5em;">Loading Projects...</p>
+            <p style="text-align: center; font-size: 2em;">JavaScript is required.</p>
+        </div>
+        <div id="popup">
+            <button id="popup-close-button"><svg id="cross" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></button>
+            <div class="project-holder">
+                <div class="img-holder">
+                    <img src="../images/projects/dark/yourwebsite-preview.png" alt="" id="popup-img">
+                </div>
+                <div class="info">
+                    <p class="title" id="popup-title">Your Website</p>
+                    <p class="description" id="popup-desc">A website for your business, portfolio or anything else.</p>
+                    <div class="link-holder">
+                        <a href="" target="_blank" id="popup-link">
+                            <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <use xlink:href="../images/icons/arrow-forward.svg#forward"></use>
+                            </svg>
+                            <p class="link-text">Visit</p>
+                            <!-- hidden initially -->
+                            <p class="link-text new">Visit</p>
+                        </a>
+                    </div>                    
+                </div>
+            </div>
         </div>
         <div style="height: 20vh"></div>
     </main>

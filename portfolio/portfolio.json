@@ -5,34 +5,34 @@
       "children": [
         {
           "id": "responsive-web-design",
-          "title": "Responsive Web Design",
+          "title": "Responsive Web Design Certificate",
           "link": "https://www.freecodecamp.org/certification/AdditionalRAM/responsive-web-design",
           "imgSrc": "../images/projects/dark/responsive-design.png",
-          "description": "Click to verify certificate on freeCodeCamp.org.",
+          "description": "freeCodeCamp's Responsive Web Design Certificate. Covers HTML, CSS, Flexbox, Grid, and Responsive Design. Click \"Visit\" to verify certificate on freeCodeCamp.org.",
           "pixelated": false
         },
         {
-          "id": "javascript-algorithms",
+          "id": "javascript-algorithms Certificate",
           "title": "JavaScript Algorithms and Data Structures",
           "link": "https://www.freecodecamp.org/certification/AdditionalRAM/javascript-algorithms-and-data-structures",
           "imgSrc": "../images/projects/dark/js.png",
-          "description": "Click to verify certificate on freeCodeCamp.org.",
+          "description": "freeCodeCamp's JavaScript Algorithms and Data Structures Certificate. Covers JavaScript, ES6, Regular Expressions, Debugging, Data Structures, and Algorithms. Click \"Visit\" to verify certificate on freeCodeCamp.org.",
           "pixelated": false
         },
         {
           "id": "frontend-libraries",
-          "title": "Front End Development Libraries (React)",
+          "title": "Front End Development Libraries (React) Certificate",
           "link": "https://www.freecodecamp.org/certification/AdditionalRAM/front-end-development-libraries",
           "imgSrc": "../images/projects/dark/react.png",
-          "description": "Click to verify certificate on freeCodeCamp.org.",
+          "description": "freeCodeCamp's Front End Development Libraries Certificate. Covers Bootstrap, jQuery, Sass, React, and Redux. Click \"Visit\" to verify certificate on freeCodeCamp.org.",
           "pixelated": false
         },
         {
           "id": "data-visualisation",
-          "title": "Data Visualisation (D3)",
+          "title": "Data Visualisation (D3) Certificate",
           "link": "https://www.freecodecamp.org/certification/AdditionalRAM/data-visualization",
           "imgSrc": "../images/projects/dark/d3.png",
-          "description": "Click to verify certificate on freeCodeCamp.org.",
+          "description": "freeCodeCamp's Data Visualisation Certificate. Covers D3, JSON APIs, AJAX and fetch. Click \"Visit\" to verify certificate on freeCodeCamp.org.",
           "pixelated": false
         }
       ]
@@ -82,7 +82,7 @@
         {
           "id": "dom-simple-list",
           "title": "DOM Simple List",
-          "link": "./dom-simple-list/index.html",
+          "link": "../dom-tests/dom-simple-list/index.html",
           "imgSrc": "/images/projects/dark/dom-tests/list.png",
           "description": "First DOM project ever. Add and remove stuff from a simple list, hide and search.",
           "pixelated": true
@@ -90,7 +90,7 @@
         {
           "id": "dom-simple-calculator",
           "title": "DOM Simple Calculator",
-          "link": "./dom-simple-calculator/index.html",
+          "link": "../dom-tests/dom-simple-calculator/index.html",
           "imgSrc": "/images/projects/dark/dom-tests/calculator.png",
           "description": "Very simple calculator app using eval() function.",
           "pixelated": true
@@ -98,7 +98,7 @@
         {
           "id": "dom-simple-todo",
           "title": "DOM Simple To-Do",
-          "link": "./dom-simple-todo/index.html",
+          "link": "../dom-tests/dom-simple-todo/index.html",
           "imgSrc": "/images/projects/dark/dom-tests/todo.png",
           "description": "To Do project app, can add lists, items and checks. Saves using local storage.",
           "pixelated": true
@@ -106,7 +106,7 @@
         {
           "id": "dom-random-quote",
           "title": "DOM Random Quote Generator",
-          "link": "./dom-random-quote/index.html",
+          "link": "../dom-tests/dom-random-quote/index.html",
           "imgSrc": "/images/projects/dark/dom-tests/quote.png",
           "description": "Gets a random quote from api.quotable.io and displays using the DOM.",
           "pixelated": true
@@ -114,7 +114,7 @@
         {
           "id": "dom-tictactoe",
           "title": "DOM Tic Tac Toe",
-          "link": "./dom-tic-tac-toe/index.html",
+          "link": "../dom-tests/dom-tic-tac-toe/index.html",
           "imgSrc": "/images/projects/dark/dom-tests/xox.png",
           "description": "Tic Tac Toe game between two players, bot implementation unfinished",
           "pixelated": true
@@ -122,7 +122,7 @@
         {
           "id": "dom-weather",
           "title": "DOM Weather",
-          "link": "./dom-weather/index.html",
+          "link": "../dom-tests/dom-weather/index.html",
           "imgSrc": "/images/projects/dark/dom-tests/weather.png",
           "description": "Uses api.open-meteo.com to get hourly weather for 3 days.",
           "pixelated": true
