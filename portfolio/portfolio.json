@@ -52,7 +52,7 @@
         {
           "id": "additionalram-com",
           "title": "additionalram .com",
-          "link": "http://additionalram.com",
+          "link": "https://additionalram.com",
           "imgSrc": "../images/projects/dark/addram-site-preview.png",
           "description": "AdditionalRAM's personal website. It's the website you're looking at right now.",
           "pixelated": false
@@ -60,7 +60,7 @@
         {
           "id": "simphase",
           "title": "SIMPHASE",
-          "link": "./simphase/index.html",
+          "link": "../previews/simphase/index.html",
           "imgSrc": "/images/projects/dark/simphase-preview.png",
           "description": "A clone of my father's website, simphase.de",
           "pixelated": false
@@ -68,7 +68,7 @@
         {
           "id": "tilted-games",
           "title": "TILTED GAMES",
-          "link": "./tilted-gaming-store/index.html",
+          "link": "../previews/tilted-gaming-store/index.html",
           "imgSrc": "/images/projects/dark/tilted-cover.png",
           "description": "This website is an example for a used video game thrift store",
           "pixelated": false
