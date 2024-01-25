@@ -217,7 +217,8 @@ section:not(:first-of-type) {
 #gallery-holder .gallery-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 2vh;
   padding: 0;
 }
@@ -277,7 +278,8 @@ button:active {
 #gallery-image-view #gallery-image-view-image {
   width: 90vw;
   height: 90vh;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #gallery-image-view #gallery-image-view-image img {
   width: 100%;
@@ -528,6 +530,7 @@ header .nav-link {
     opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
+    height: -moz-fit-content;
     height: fit-content;
     width: 100vw;
     padding-bottom: 5vh;
@@ -543,6 +546,7 @@ header .nav-link {
   header .mobile-nav-menu a {
     font-family: "Comfortaa";
     text-align: right;
+    width: -moz-fit-content;
     width: fit-content;
     margin-right: 5vw;
   }

@@ -102,7 +102,8 @@ h3.specialfont {
   height: 10vh;
   margin: auto 10px;
   max-width: 17vw;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .logo-container .logotext {
   max-width: 40vw;
@@ -382,13 +383,8 @@ nav a.navbar {
 
 .totransition {
   /* margin-top:40px; */
-  -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
   transform: translateY(50px) rotate(-5deg) translateZ(0);
-  -webkit-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
   transition-delay: 0.3s;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
   transition: 0.4s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   opacity: 0;
@@ -396,7 +392,6 @@ nav a.navbar {
 
 .inView {
   opacity: 1;
-  -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
   transform: translateY(0px) rotate(0deg) translateZ(0);
 }
 
@@ -441,7 +436,8 @@ nav a.navbar {
   overflow: hidden;
 }
 .discord-banner .discord-background img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: blur(2px) grayscale(30%);
   width: calc(100% + 10px);
   height: calc(100% + 10px);
@@ -465,7 +461,8 @@ nav a.navbar {
 .discord-banner .discord-icon img {
   width: 103%;
   height: 103%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 0;
   z-index: 2;
 }
@@ -612,7 +609,8 @@ nav a.navbar {
 .project .img-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .project .title {
   font-size: 1.5em;
@@ -639,7 +637,8 @@ nav a.navbar {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   opacity: 0;
   visibility: hidden;
   transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -704,7 +703,8 @@ nav a.navbar {
 #popup .project-holder .img-holder img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #popup .project-holder .info {
   margin: 7vh;
@@ -736,6 +736,7 @@ nav a.navbar {
 }
 #popup .project-holder .info .link-holder {
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -849,6 +850,7 @@ a:hover .dark-mode-icon {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -889,10 +891,12 @@ a:hover .dark-mode-icon {
   #popup .project-holder .img-holder img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Change object-fit to contain */
+    -o-object-fit: contain;
+       object-fit: contain; /* Change object-fit to contain */
     border-radius: 10%;
   }
   #popup .project-holder .info {
+    height: -moz-fit-content;
     height: fit-content;
     width: 90%;
     margin: 2vh 5vh;
